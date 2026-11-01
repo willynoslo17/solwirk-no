@@ -10,5 +10,5 @@ export const HIDDEN = new Set<string>(["1418407011351138304", "4C4CCC40-FF91-4CC
 export const CERT_ONLY = true;
 export const CERTIFIED = new Set<string>(["1599598514135379968"]);
 
-/* 2026-11-01: CJ variants not sold (margin under 15 % at the cost-based price). */
-export const EXCLUDED_VIDS = new Set<string>(["1599598514215071745", "2603150727151607300"]);
+/* 2026-11-01: CJ variants not sold. 8 pc and 20 pc re-enabled 01.11 by owner decision (low margin accepted). */
+export const EXCLUDED_VIDS = new Set<string>([]);
