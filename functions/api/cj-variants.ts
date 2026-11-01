@@ -1,5 +1,6 @@
 import { verifyQuote, signQuote } from "../_shared/quote";
 import { retailNokFor } from "../_shared/pricing";
+import { EXCLUDED_VIDS } from "../_shared/price-overrides";
 import { validPid } from "../_shared/cj";
 import { listCjVariants, optionNameNb, optionValueNb } from "../_shared/cj-variants";
 
@@ -37,7 +38,7 @@ export async function onRequestGet(context: any) {
     const signed = await signQuote(context.env, { provider: "cj", ref: pid, sku: v.sku, name, cost: v.costUsd, ids: { cj_pid: pid, cj_vid: v.vid } });
     return { vid: v.vid, label, values, image: v.image, priceNok: retailNokFor("cj", pid, v.costUsd), quote: signed };
   }));
-  const usable = variants.filter((v) => v.quote && v.priceNok > 0);
+  const usable = variants.filter((v) => v.quote && v.priceNok > 0 && !EXCLUDED_VIDS.has(String(v.vid)));
   return Response.json({ ok: true, single: usable.length <= 1, options, variants: usable }, { headers });
 }
 

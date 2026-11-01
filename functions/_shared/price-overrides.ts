@@ -8,4 +8,7 @@ export const HIDDEN = new Set<string>(["1418407011351138304", "4C4CCC40-FF91-4CC
 /* 2026-10-31 (sincert): CERT_ONLY = true -> ONLY ids listed in CERTIFIED are shown/sellable (all providers: CJ, Printify, Printful, Gelato).
  * Restore per SKU with /workspace/negocios/restaurar_por_sku.py (adds the id here and removes it from HIDDEN). */
 export const CERT_ONLY = true;
-export const CERTIFIED = new Set<string>([]);
+export const CERTIFIED = new Set<string>(["1599598514135379968"]);
+
+/* 2026-11-01: CJ variants not sold (margin under 15 % at the cost-based price). */
+export const EXCLUDED_VIDS = new Set<string>(["1599598514215071745", "2603150727151607300"]);

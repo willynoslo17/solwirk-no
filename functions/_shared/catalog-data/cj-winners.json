@@ -79,6 +79,7 @@
     "solar still water"
   ],
   "pids": [
+    "1599598514135379968",
     "43F626C6-B8A6-4422-90C0-B8D2B10523CC",
     "1D523016-A9B3-45CB-A0EF-E097AD366714",
     "EC4B1678-DAED-4349-9415-2612192DE24D",
@@ -183,6 +184,18 @@
       "image": "https://cf.cjdropshipping.com/ab8bab3c-3880-47f3-b70b-fb5bcfa2c858.jpg",
       "supplierPriceMaxUsd": 21.0741,
       "keyword": "solar shower bag"
+    },
+    {
+      "id": "1599598514135379968",
+      "sku": "CJLE162920901AZ",
+      "name": "Solcellelys for trapp og hage",
+      "nameEn": "Fashion Outdoor Solar Courtyard Stair Light",
+      "category": "Solenergi",
+      "image": "https://cf.cjdropshipping.com/a134b167-fb2e-43c0-8125-8bf12843f549.jpg",
+      "supplierPriceMaxUsd": 1.4,
+      "keyword": "",
+      "description": "Solcelledrevet lys for trapper, hage og uteplass. Lades av sola og tennes automatisk i mørket. Fås i 1 stk (varmt lys) og 4 stk (hvitt lys). CE (EMC) og RoHS-dokumentasjon fra leverandøren.",
+      "certified": "2026-11-01"
     }
   ]
 }
