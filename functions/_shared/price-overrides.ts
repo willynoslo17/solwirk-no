@@ -8,7 +8,7 @@ export const HIDDEN = new Set<string>(["1418407011351138304", "4C4CCC40-FF91-4CC
 /* 2026-10-31 (sincert): CERT_ONLY = true -> ONLY ids listed in CERTIFIED are shown/sellable (all providers: CJ, Printify, Printful, Gelato).
  * Restore per SKU with /workspace/negocios/restaurar_por_sku.py (adds the id here and removes it from HIDDEN). */
 export const CERT_ONLY = true;
-export const CERTIFIED = new Set<string>(["1599598514135379968", "pfy-energy-tote", "pfy-energy-poster-art", "pfy-energy-poster-type", "pfy-energy-journal", "pfy-energy-sticker", "pfy-energy-mousepad", "pfy-energy-tee-white-s", "pfy-energy-tee-white-m", "pfy-energy-tee-white-l", "pfy-energy-tee-white-xl", "pfy-energy-hoodie-navy-s", "pfy-energy-hoodie-navy-m", "pfy-energy-hoodie-navy-l", "pfy-energy-hoodie-navy-xl"]);
+export const CERTIFIED = new Set<string>(["1599598514135379968", "pfy-energy-tote", "pfy-energy-poster-art", "pfy-energy-poster-type", "pfy-energy-journal", "pfy-energy-sticker", "pfy-energy-mousepad", "pfy-energy-tee-white-s", "pfy-energy-tee-white-m", "pfy-energy-tee-white-l", "pfy-energy-tee-white-xl", "pfy-energy-hoodie-navy-s", "pfy-energy-hoodie-navy-m", "pfy-energy-hoodie-navy-l", "pfy-energy-hoodie-navy-xl", "pfy-energy-mug-std", "pfy-energy-mug-eu"]);
 
 /* 2026-11-01: CJ variants not sold. 8 pc and 20 pc re-enabled 01.11 by owner decision (low margin accepted). */
 export const EXCLUDED_VIDS = new Set<string>([]);
@@ -17,4 +17,4 @@ export const EXCLUDED_VIDS = new Set<string>([]);
 export const VARIANT_PRICE: Record<string, number> = {"1599598514215071744": 35, "1600418745875443712": 139, "1599598514215071745": 359, "2603150727151607300": 1009};
 
 /* Printify (01.11): fast pris = vanlig norsk markedspris for tilsvarende POD-vare; hver pris gir fortjeneste også ved fri frakt (pris*0.77 > (kost+frakt)*10.8). */
-export const PRINTIFY_PRICE: Record<string, number> = {"pfy-energy-tote": 299, "pfy-energy-poster-art": 229, "pfy-energy-poster-type": 229, "pfy-energy-journal": 259, "pfy-energy-sticker": 149, "pfy-energy-mousepad": 249, "pfy-energy-tee-white-s": 299, "pfy-energy-tee-white-m": 299, "pfy-energy-tee-white-l": 299, "pfy-energy-tee-white-xl": 299, "pfy-energy-hoodie-navy-s": 649, "pfy-energy-hoodie-navy-m": 649, "pfy-energy-hoodie-navy-l": 649, "pfy-energy-hoodie-navy-xl": 649};
+export const PRINTIFY_PRICE: Record<string, number> = {"pfy-energy-tote": 299,"pfy-energy-poster-art": 229,"pfy-energy-poster-type": 229,"pfy-energy-journal": 259,"pfy-energy-sticker": 149,"pfy-energy-mousepad": 249,"pfy-energy-tee-white-s": 299,"pfy-energy-tee-white-m": 299,"pfy-energy-tee-white-l": 299,"pfy-energy-tee-white-xl": 299,"pfy-energy-hoodie-navy-s": 649,"pfy-energy-hoodie-navy-m": 649,"pfy-energy-hoodie-navy-l": 649,"pfy-energy-hoodie-navy-xl": 649,"pfy-energy-mug-std": 159,"pfy-energy-mug-eu": 159};
