@@ -8,7 +8,7 @@ export const HIDDEN = new Set<string>(["1418407011351138304", "4C4CCC40-FF91-4CC
 /* 2026-10-31 (sincert): CERT_ONLY = true -> ONLY ids listed in CERTIFIED are shown/sellable (all providers: CJ, Printify, Printful, Gelato).
  * Restore per SKU with /workspace/negocios/restaurar_por_sku.py (adds the id here and removes it from HIDDEN). */
 export const CERT_ONLY = true;
-export const CERTIFIED = new Set<string>(["1599598514135379968"]);
+export const CERTIFIED = new Set<string>(["1599598514135379968", "pfy-energy-tote", "pfy-energy-poster-art", "pfy-energy-poster-type", "pfy-energy-journal", "pfy-energy-sticker", "pfy-energy-mousepad", "pfy-energy-tee-white-s", "pfy-energy-tee-white-m", "pfy-energy-tee-white-l", "pfy-energy-tee-white-xl", "pfy-energy-hoodie-navy-s", "pfy-energy-hoodie-navy-m", "pfy-energy-hoodie-navy-l", "pfy-energy-hoodie-navy-xl"]);
 
 /* 2026-11-01: CJ variants not sold. 8 pc and 20 pc re-enabled 01.11 by owner decision (low margin accepted). */
 export const EXCLUDED_VIDS = new Set<string>([]);
