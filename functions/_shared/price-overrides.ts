@@ -13,5 +13,8 @@ export const CERTIFIED = new Set<string>(["1599598514135379968", "pfy-energy-tot
 /* 2026-11-01: CJ variants not sold. 8 pc and 20 pc re-enabled 01.11 by owner decision (low margin accepted). */
 export const EXCLUDED_VIDS = new Set<string>([]);
 
-/* 2026-11-01 owner rule: price ~15 kr under the most comparable Norwegian product (total incl. shipping). Per CJ variant (vid). */
-export const VARIANT_PRICE: Record<string, number> = {"1599598514215071744": 35, "1600418745875443712": 129, "1599598514215071745": 349, "2603150727151607300": 999};
+/* 2026-11-01 16:13 owner rule (replaces ~15 kr under): price = SAME total as the most comparable Norwegian product (incl. shipping), always with profit; discounts only when owner says. Per CJ variant (vid). */
+export const VARIANT_PRICE: Record<string, number> = {"1599598514215071744": 35, "1600418745875443712": 139, "1599598514215071745": 359, "2603150727151607300": 1009};
+
+/* Printify (01.11): fast pris = vanlig norsk markedspris for tilsvarende POD-vare; hver pris gir fortjeneste også ved fri frakt (pris*0.77 > (kost+frakt)*10.8). */
+export const PRINTIFY_PRICE: Record<string, number> = {"pfy-energy-tote": 299, "pfy-energy-poster-art": 229, "pfy-energy-poster-type": 229, "pfy-energy-journal": 259, "pfy-energy-sticker": 149, "pfy-energy-mousepad": 249, "pfy-energy-tee-white-s": 299, "pfy-energy-tee-white-m": 299, "pfy-energy-tee-white-l": 299, "pfy-energy-tee-white-xl": 299, "pfy-energy-hoodie-navy-s": 649, "pfy-energy-hoodie-navy-m": 649, "pfy-energy-hoodie-navy-l": 649, "pfy-energy-hoodie-navy-xl": 649};
